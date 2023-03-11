@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <div @click="goToPromptPage()" class="promptModelBox">
+        <div class="promptModelBox" @click="goToPromptPage()">
             <div class="textbox">
-            <p class="textboxText">Try the Prompt</p>
+                <p class="textboxText">Try the Prompt</p>
             </div>
         </div>
         <h1 class="title">Future Design Toolkit</h1>
@@ -20,11 +20,11 @@
         <div class="test d-flex justify-content-center">
             <div class="cards">
                 <div class="card method1">test</div>
-                <div class="card method2"></div>
-                <div class="card method3"></div>
-                <div class="card method4"></div>
-                <div class="card method5"></div>
-                <div class="card method6"></div>
+                <div class="card method2" />
+                <div class="card method3" />
+                <div class="card method4" />
+                <div class="card method5" />
+                <div class="card method6" />
             </div>
         </div>
         <footer>
@@ -35,14 +35,10 @@
 </template>
 <script setup lang="ts">
 import router from '@/router';
-import { useRoute } from 'vue-router';
 
-
-const goToPromptPage = () => router.push({name: 'prompts'})
-
+const goToPromptPage = () => router.push({name: 'prompts'});
 </script>
 <style>
-
 .container {
     margin: auto;
     max-width: 916px;
@@ -96,8 +92,7 @@ const goToPromptPage = () => router.push({name: 'prompts'})
     font-size: 15px;
 }
 
-footer{
+footer {
     text-align: center;
-    
 }
 </style>
