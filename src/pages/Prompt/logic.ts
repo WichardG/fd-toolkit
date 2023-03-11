@@ -5,8 +5,9 @@ export interface promptChoice {
     selected: boolean,
 }
 export interface promptItem {
+    id: number
     title: string,
-    discription: string,
+    description: string,
     choices: promptChoice[],
 }
 
