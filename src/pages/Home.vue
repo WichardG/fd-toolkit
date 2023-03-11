@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="promptModelBox">
+        <div @click="goToPromptPage()" class="promptModelBox">
             <div class="textbox">
             <p class="textboxText">Try the Prompt</p>
             </div>
@@ -33,7 +33,14 @@
         </footer>
     </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import router from '@/router';
+import { useRoute } from 'vue-router';
+
+
+const goToPromptPage = () => router.push({name: 'prompts'})
+
+</script>
 <style>
 
 .container {
@@ -42,6 +49,7 @@
 }
 
 .promptModelBox {
+    cursor: pointer;
     max-width: 80%;
     width: 800px;
     height: 500px;
