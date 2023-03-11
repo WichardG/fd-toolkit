@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>Template Vue3 With ts and nice configs</h1>
+        <h2> dit is een tekst</h2>
         <WelcomeItem />
     </div>
 </template>
