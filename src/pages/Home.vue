@@ -6,5 +6,5 @@
     </div>
 </template>
 <script setup lang="ts">
-import WelcomeItem from '@/components/WelcomeItem.vue';
+import WelcomeItem from '../components/test.vue';
 </script>
