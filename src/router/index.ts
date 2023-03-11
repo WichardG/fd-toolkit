@@ -12,6 +12,11 @@ const router = createRouter({
       path: '/prompts',
       name: 'prompts',
       component: () => import('../pages/Prompt/PromptOverview.vue')
+    },
+    {
+      path: '/testMethodes',
+      name: 'methodes',
+      component: () => import('../pages/methodes/MethodeOne.vue')
     }
   ]
 })

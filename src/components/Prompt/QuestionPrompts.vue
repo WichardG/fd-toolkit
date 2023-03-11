@@ -2,10 +2,10 @@
     <div class="d-flex justify-content-center">
         <div>
             <div class="container">
-                <h1 class="questionName">prompt</h1>
+                <h1 class="questionName">{{item?.title}}</h1>
 
-                <div>
-                    <button class="question">text</button>
+                <div v-for="choice in item?.choices">
+                    <button @click="id += 1" class="question">{{choice.context}}</button>
                 </div>
 
             </div>
@@ -15,15 +15,19 @@
 
 <script setup lang="ts">
 import type { promptItem } from '@/pages/Prompt/logic';
-import { onMounted } from 'vue';
+import { onMounted, ref, computed, watch } from 'vue';
 
-    const emit = defineEmits<{
-        (event: 'nextQuestion', id: number): void
-    }>()
-
+    // const emit = defineEmits<{
+    //     (event: 'nextQuestion', id: number): void
+    // }>()
+    const id = ref(1);
     const props = defineProps<{items: promptItem[]}>()
-
     const getNextPromptItemByID = (id: number) => props.items.find(item => item.id === id);
+
+    const item = computed(()=> {
+        console.log('id trigger')
+        return getNextPromptItemByID(id.value)
+    })
 
     onMounted(()=> console.log(props.items))
 
