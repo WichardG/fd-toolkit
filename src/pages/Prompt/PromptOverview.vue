@@ -5,6 +5,12 @@
     </div>
 </template>
 <script setup lang="ts">
-import type QuestionPromptsVue from '@/components/Prompt/QuestionPrompts.vue';
+import QuestionPromptsVue from '@/components/Prompt/QuestionPrompts.vue';
+import { ref } from 'vue';
+import type { promptItem } from './logic';
+
+const promptItem = ref<promptItem>()
+
+
 
 </script>
