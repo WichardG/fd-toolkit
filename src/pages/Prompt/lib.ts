@@ -14,8 +14,8 @@ const promptChoiceTwo: promptItem = {
     title: "title 2",
     description: "description for prompt choice 2",
     choices: [
-       { id: 1, context: 'choice 1', selected: false },
-       { id: 2, context: 'choice 2', selected: false }
+        { id: 1, context: 'choice 1', selected: false },
+        { id: 2, context: 'choice 2', selected: false }
     ]
 }
 const promptChoiceThree: promptItem = {
@@ -24,7 +24,9 @@ const promptChoiceThree: promptItem = {
     description: "description for prompt choice 3",
     choices: [
        { id: 1, context: 'choice 1', selected: false },
-       { id: 2, context: 'choice 2', selected: false }
+       { id: 2, context: 'choice 2', selected: false },
+       { id: 3, context: 'choice 3', selected: false },
+       { id: 4, context: 'choice 4', selected: false }
     ]
 }
 const promptChoiceFour: promptItem = {
@@ -33,7 +35,8 @@ const promptChoiceFour: promptItem = {
     description: "description for prompt choice 4",
     choices: [
        { id: 1, context: 'choice 1', selected: false },
-       { id: 2, context: 'choice 2', selected: false }
+       { id: 2, context: 'choice 2', selected: false },
+       { id: 3, context: 'choice 3', selected: false }
     ]
 }
 const promptChoiceFive: promptItem = {
@@ -51,7 +54,8 @@ const promptChoiceSix: promptItem = {
     description: "description for prompt choice 6",
     choices: [
        { id: 1, context: 'choice 1', selected: false },
-       { id: 2, context: 'choice 2', selected: false }
+       { id: 2, context: 'choice 2', selected: false },
+       { id: 3, context: 'choice 3', selected: false }
     ]
 }
 const promptChoiceSeven: promptItem = {
