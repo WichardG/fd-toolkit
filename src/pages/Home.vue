@@ -19,12 +19,14 @@
 
         <div class="test d-flex justify-content-center">
             <div class="cards">
-                <div class="card method1" @click="goToMethodePage('foo')">Foo</div>
-                <div class="card method2" @click="goToMethodePage('bar')">Bar</div>
-                <div class="card method3" @click="goToMethodePage('foo')">Foo</div>
-                <div class="card method4" @click="goToMethodePage('bar')">Bar</div>
-                <div class="card method5" @click="goToMethodePage('foo')">Foo</div>
-                <div class="card method6" @click="goToMethodePage('bar')">Bar</div>
+                <div class="card method1" @click="goToMethodePage('backcasting')">Backcasting</div>
+                <div class="card method2" @click="goToMethodePage('roadmapping')">Roadmapping</div>
+                <div class="card method3" @click="goToMethodePage('sciencefictionprototyping')">
+                    Sciencefiction Prototyping
+                </div>
+                <div class="card method4" @click="goToMethodePage('speculatiefontwerp')">Speculatief Ontwerp</div>
+                <div class="card method5" @click="goToMethodePage('toekomstscenario')">Toekomst Scenario</div>
+                <div class="card method6" @click="goToMethodePage('trendanalyse')">Trend Analyse</div>
             </div>
         </div>
         <footer>

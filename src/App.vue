@@ -18,9 +18,6 @@
                     <li>
                         <RouterLink class="dropdown-item" to="/prompts">Prompt</RouterLink>
                     </li>
-                    <li>
-                        <RouterLink class="dropdown-item" to="/Methodes/Foo">methodes</RouterLink>
-                    </li>
                 </ul>
             </div>
         </nav>
