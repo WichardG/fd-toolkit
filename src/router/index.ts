@@ -14,9 +14,14 @@ const router = createRouter({
             component: () => import('../pages/Prompt/PromptOverview.vue'),
         },
         {
-            path: '/testMethodes',
-            name: 'methodes',
-            component: () => import('../pages/methodes/MethodeOne.vue'),
+            path: '/Methodes/Foo',
+            name: 'methodes-foo',
+            component: () => import('../pages/methodes/MethodeFoo.vue'),
+        },
+        {
+            path: '/Methodes/Bar',
+            name: 'methodes-bar',
+            component: () => import('../pages/methodes/MethodeBar.vue'),
         },
     ],
 });

@@ -19,12 +19,12 @@
 
         <div class="test d-flex justify-content-center">
             <div class="cards">
-                <div class="card method1">test</div>
-                <div class="card method2" />
-                <div class="card method3" />
-                <div class="card method4" />
-                <div class="card method5" />
-                <div class="card method6" />
+                <div class="card method1" @click="goToMethodePage('foo')">Foo</div>
+                <div class="card method2" @click="goToMethodePage('bar')">Bar</div>
+                <div class="card method3" @click="goToMethodePage('foo')">Foo</div>
+                <div class="card method4" @click="goToMethodePage('bar')">Bar</div>
+                <div class="card method5" @click="goToMethodePage('foo')">Foo</div>
+                <div class="card method6" @click="goToMethodePage('bar')">Bar</div>
             </div>
         </div>
         <footer>
@@ -34,9 +34,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import router from '@/router';
-
-const goToPromptPage = () => router.push({name: 'prompts'});
+import {goToMethodePage, goToPromptPage} from '../routingHelper';
 </script>
 <style>
 .container {
