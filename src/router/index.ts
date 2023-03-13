@@ -15,12 +15,12 @@ const router = createRouter({
         },
         {
             path: '/Methodes/Foo',
-            name: 'methodesFoo',
+            name: 'methodes-foo',
             component: () => import('../pages/methodes/MethodeFoo.vue'),
         },
         {
             path: '/Methodes/Bar',
-            name: 'methodesBar',
+            name: 'methodes-bar',
             component: () => import('../pages/methodes/MethodeBar.vue'),
         },
     ],
