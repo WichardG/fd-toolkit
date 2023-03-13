@@ -1,9 +1,9 @@
 <template>
-    <div class="d-flex justify-content-center">
+    <div class="">
         <div>
-            <div class="container">
-                <h1 class="questionName">{{ item?.title }}</h1>
-
+            <h1 class="questionName">{{ item?.title }}</h1>
+            <div class="filler-div" />
+            <div class="d-flex justify-content-around">
                 <div v-for="choice in item?.choices" :key="choice.id">
                     <button class="question" @click="id += 1">{{ choice.context }}</button>
                 </div>
@@ -32,8 +32,6 @@ const item = computed(() => getNextPromptItemByID(id.value));
     position: relative;
     font-weight: bold;
     font-size: 40px;
-    margin-bottom: 100%;
-    margin-top: 50%;
 }
 
 .question {
@@ -41,6 +39,13 @@ const item = computed(() => getNextPromptItemByID(id.value));
     width: 200px;
     height: 50px;
     border-radius: 10px;
+}
+
+.filler-div {
+    margin: 20px;
+    border: solid black 1px;
+    border-radius: 20px;
+    height: 200px;
 }
 
 .question:hover {
