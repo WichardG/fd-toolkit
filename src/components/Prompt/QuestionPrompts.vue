@@ -1,11 +1,13 @@
 <template>
-    <div class="">
-        <div>
-            <h1 class="questionName">{{ item?.title }}</h1>
+    <div>
+        <div v-if="currentItem">
+            <h1 class="questionName">{{ currentItem?.title }}</h1>
             <div class="filler-div" />
             <div class="d-flex justify-content-around">
-                <div v-for="choice in item?.choices" :key="choice.id">
-                    <button class="question" @click="id += 1">{{ choice.context }}</button>
+                <div v-for="choice in currentItem?.choices" :key="choice.id">
+                    <button class="question" @click="submitData(currentItem.id, choice.id)">
+                        {{ choice.context }}
+                    </button>
                 </div>
             </div>
         </div>
@@ -16,14 +18,19 @@
 import type {promptItem} from '@/pages/Prompt/logic';
 import {ref, computed} from 'vue';
 
-// const emit = defineEmits<{
-//     (event: 'nextQuestion', id: number): void
-// }>()
-const id = ref(1);
+const emit = defineEmits<{
+    (event: 'questionDataId', promptData: {promptId: number; choiceId: number}): void;
+}>();
+const itemId = ref(1);
 const props = defineProps<{items: promptItem[]}>();
-const getNextPromptItemByID = (itemId: number) => props.items.find(item => item.id === itemId);
 
-const item = computed(() => getNextPromptItemByID(id.value));
+const submitData = (promptId: number, choiceId: number) => {
+    itemId.value += 1;
+
+    if (promptId && choiceId) emit('questionDataId', {promptId, choiceId});
+};
+
+const currentItem = computed(() => props.items.find(({id}) => id === itemId.value) ?? props.items[0]);
 </script>
 
 <style scoped>
