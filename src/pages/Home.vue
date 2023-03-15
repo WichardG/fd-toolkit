@@ -24,9 +24,9 @@
                 <div class="card method3" @click="goToMethodePage('sciencefictionprototyping')">
                     Sciencefiction Prototyping
                 </div>
-                <div class="card method4" @click="goToMethodePage('speculatiefontwerp')">Speculatief Ontwerp</div>
-                <div class="card method5" @click="goToMethodePage('toekomstscenario')">Toekomst Scenario</div>
-                <div class="card method6" @click="goToMethodePage('trendanalyse')">Trend Analyse</div>
+                <div class="card method4" @click="goToMethodePage('speculationdesign')">Speculation Design</div>
+                <div class="card method5" @click="goToMethodePage('moonshot')">Moon Shot</div>
+                <div class="card method6" @click="goToMethodePage('trendanalysis')">Trend Analysis</div>
             </div>
         </div>
         <footer>

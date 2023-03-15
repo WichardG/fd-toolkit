@@ -30,19 +30,19 @@ const router = createRouter({
             component: () => import('../pages/methodes/sciencefictionPrototyping.vue'),
         },
         {
-            path: '/Methodes/speculatiefOntwerp',
-            name: 'methodes-speculatiefontwerp',
-            component: () => import('../pages/methodes/speculatiefOntwerp.vue'),
+            path: '/Methodes/speculationdesign',
+            name: 'methodes-speculationdesign',
+            component: () => import('../pages/methodes/speculationDesign.vue'),
         },
         {
-            path: '/Methodes/toekomstscenario',
-            name: 'methodes-toekomstscenario',
-            component: () => import('../pages/methodes/toekomstscenario.vue'),
+            path: '/Methodes/moonshot',
+            name: 'methodes-moonshot',
+            component: () => import('../pages/methodes/moonShot.vue'),
         },
         {
-            path: '/Methodes/trendanalyse',
-            name: 'methodes-trendanalyse',
-            component: () => import('../pages/methodes/trendanalyse.vue'),
+            path: '/Methodes/trendanalysis',
+            name: 'methodes-trendanalysis',
+            component: () => import('../pages/methodes/trendanalysis.vue'),
         },
     ],
 });
