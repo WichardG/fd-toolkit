@@ -21,7 +21,7 @@ import {ref, computed} from 'vue';
 const emit = defineEmits<{
     (event: 'questionDataId', promptData: {promptId: number; choiceId: number}): void;
 }>();
-const itemId = ref(1);
+const itemId = ref(0);
 const props = defineProps<{items: promptItem[]}>();
 
 const submitData = (promptId: number, choiceId: number) => {
@@ -30,7 +30,7 @@ const submitData = (promptId: number, choiceId: number) => {
     if (promptId && choiceId) emit('questionDataId', {promptId, choiceId});
 };
 
-const currentItem = computed(() => props.items.find(({id}) => id === itemId.value) ?? props.items[0]);
+const currentItem = computed(() => props.items[itemId.value]);
 </script>
 
 <style scoped>
