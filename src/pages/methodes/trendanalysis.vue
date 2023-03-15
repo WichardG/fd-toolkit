@@ -1,19 +1,16 @@
 <template>
     <div>
         <div class="textBox">
-            <h2>Roadmapping</h2>
+            <h2>Trend Analysis</h2>
             <p scoped>Bottom Text</p>
         </div>
         <div class="imageBox">
             <div class="imagePlaceholder"></div>
             <p scoped>
-                Roadmapping is a strategic planning method that involves creating a visual representation of the steps
-                needed to achieve a specific goal or outcome. It typically involves identifying a set of strategic
-                objectives and breaking them down into smaller, more achievable steps. Roadmapping can be used to plan
-                for product development, project management, or organizational strategy. It provides a clear path
-                towards achieving goals, helps identify potential roadblocks or challenges, and allows for more
-                effective resource allocation. Overall, roadmapping is a useful tool for organizations to plan and
-                execute strategies for success.
+                Trend analysis is a statistical method used to identify patterns or trends in data over time. It
+                involves plotting data on a graph, determining the slope and direction of the trend line, and making
+                predictions based on past performance. It can help identify long-term trends and seasonal variations,
+                and provide valuable insights for decision-making.
             </p>
         </div>
         <h2 class="methodCardText">Methods you might like</h2>
