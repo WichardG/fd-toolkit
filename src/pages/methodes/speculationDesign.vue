@@ -1,19 +1,18 @@
 <template>
     <div>
         <div class="textBox">
-            <h2>Roadmapping</h2>
+            <h2>Speculation Design</h2>
             <p scoped>Bottom Text</p>
         </div>
         <div class="imageBox">
             <div class="imagePlaceholder"></div>
             <p scoped>
-                Roadmapping is a strategic planning method that involves creating a visual representation of the steps
-                needed to achieve a specific goal or outcome. It typically involves identifying a set of strategic
-                objectives and breaking them down into smaller, more achievable steps. Roadmapping can be used to plan
-                for product development, project management, or organizational strategy. It provides a clear path
-                towards achieving goals, helps identify potential roadblocks or challenges, and allows for more
-                effective resource allocation. Overall, roadmapping is a useful tool for organizations to plan and
-                execute strategies for success.
+                Speculative design is a method that explores and critiques the social, political, and cultural
+                implications of technology and innovation through the creation of provocative and often dystopian design
+                concepts. It involves designing and prototyping speculative future scenarios to challenge assumptions
+                about how technology and society might evolve. Speculative design can be used to provoke debate and
+                discussion about the potential risks and benefits of new technologies, and to help shape more
+                responsible and ethical approaches to innovation.
             </p>
         </div>
         <h2 class="methodCardText">Methods you might like</h2>
